@@ -44,5 +44,5 @@ module "this" {
   EOT
   security_groups = [data.aws_security_group.this.id]
   vpc_subnets     = data.aws_subnets.this.ids
-  worker_pool_id  = random_pet.this.id
+  worker_pool_id  = data.worker_pool_id.aws
 }
