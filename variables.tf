@@ -68,7 +68,7 @@ variable "iam_role_arn" {
 variable "min_size" {
   type        = number
   description = "Minimum numbers of workers to spin up"
-  default     = 0
+  default     = 1
 }
 
 variable "max_size" {
